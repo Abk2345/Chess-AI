@@ -26,3 +26,42 @@ Final Result:
 After exploring all possible moves, the function returns the information about the best move found.
 
 This process is repeated recursively, exploring the game tree until the specified depth is reached. The algorithm assumes that both players make optimal moves at each step and aims to find the best move for the current player based on the evaluation of resulting board positions.
+
+Interview Prep:
+AI-based Chess Player [Apr '21]
+
+- Developed an AI-based chess player in **C++**, an interactive game which can be played against the application through the terminal
+- Implemented **minimax algorithm** to decide moves against the player. and **alpha-beta pruning** to optimize the runtime of the game
+- In each state, the points gained after performing any of the stored possible legal moves for the pieces is compared to select **optimal** move
+
+Questions:
+
+What is minimax algorithm?
+
+Minimax is a kind of **[backtracking](https://www.geeksforgeeks.org/tag/backtracking/)** algorithm that is used in decision making and game theory to find the optimal move for a player, assuming that your opponent also plays optimally. It is widely used in two player turn-based games such as Tic-Tac-Toe, Backgammon, Mancala, Chess, etc.In Minimax the two players are called maximizer and minimizer. The **maximizer** tries to get the highest score possible while the **minimizer** tries to do the opposite and get the lowest score possible.Every board state has a value associated with it. In a given state if the maximizer has upper hand then, the score of the board will tend to be some positive value. If the minimizer has the upper hand in that board state then it will tend to be some negative value. The values of the board are calculated by some heuristics which are unique for every type of game.
+
+minimax is a kind of backracking algorithm used in game theory. it is usually used to select the best move from given options of moves, and it is used commonly for two player game. How it works is it gives a tag of maximising player and minimising player to both of it’s players, while recuring, one try to maximise while other tries to minimise the score optimally to reach the optimal solution
+
+What is alpha beta pruning?
+
+it is a technique which is used to prune out un-advantageous states which does not needs to be computed for a particular state to select it’s best move
+
+Which concept of coding did u use, elaborate?
+
+it is coded in c++ using object oriented programming, 
+
+what did u consider as parameters?
+
+depth of exploration for the search algorithm for optimisation, and the input given by user, with a fiixed priority value for every of chess pieces
+
+what is the depth consideration?
+
+depth is considered as 2
+
+what will happen if u increase the depth?
+
+time complexity will increase by factor of 2, and the algorithm will become more accurate, since the time cost tradeoff is not profitable, we choose depth=2
+
+can you explain the code?
+
+yes sure, open the code and explain briefly
